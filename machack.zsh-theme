@@ -40,7 +40,7 @@ elif [[ -n "$behind" ]]; then
   PL_BRANCH_CHAR=$'\u21b0'
 fi
 
-PROMPT="%{$fg[$PRIMARY_COLOR]╭─(%}${context}%{$fg[$PRIMARY_COLOR])─[%}${current_dir}%{$fg[$PRIMARY_COLOR]]%}${vcs_branch}
+PROMPT="%{$fg[$PRIMARY_COLOR]╭──(%}${context}%{$fg[$PRIMARY_COLOR])─[%}${current_dir}%{$fg[$PRIMARY_COLOR]]%}${vcs_branch}
 ╰─${venv_prompt}%B${user_symbol}%b%{$reset_color%} "
 RPROMPT="%B$(return_code)%b%{$reset_color%}"
 
